@@ -1,0 +1,554 @@
+/* Plantastic Events — FINAL compact customer navbar */
+.main-header.header-style2{
+  background:#11100d !important;
+  box-shadow:0 5px 20px rgba(0,0,0,.16);
+  z-index:999;
+}
+
+.main-header.header-style2 .inner-container{
+  max-width:100% !important;
+  min-height:62px !important;
+  padding:0 28px !important;
+  display:flex !important;
+  align-items:center !important;
+}
+
+.logo-box-style2{
+  float:none !important;
+  width:245px !important;
+  max-width:245px !important;
+  height:62px !important;
+  flex:0 0 245px !important;
+  display:flex !important;
+  align-items:center !important;
+  overflow:hidden !important;
+}
+
+.logo-box-style2 a{
+  width:100%;
+  height:100%;
+  display:flex !important;
+  align-items:center !important;
+}
+
+.logo-box-style2 img{
+  display:block !important;
+  width:225px !important;
+  height:56px !important;
+  max-width:none !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:left center !important;
+  border:0 !important;
+}
+
+.main-menu-box{
+  float:none !important;
+  margin-left:auto !important;
+  display:flex !important;
+  align-items:center !important;
+}
+
+.main-menu.style2 .navigation{
+  display:flex;
+  align-items:center;
+}
+
+.main-menu.style2 .navigation > li{
+  margin:0 2px !important;
+}
+
+.main-menu.style2 .navigation > li > a{
+  padding:19px 11px !important;
+  line-height:24px !important;
+  font-size:14px !important;
+  font-weight:600 !important;
+  color:#f8f3e8 !important;
+}
+
+.main-menu.style2 .navigation > li:hover > a,
+.main-menu.style2 .navigation > li.current > a{
+  color:#e1c15c !important;
+}
+
+.main-menu .navigation > li > ul{
+  top:62px !important;
+  border-top:2px solid #d4af37 !important;
+  box-shadow:0 14px 32px rgba(0,0,0,.18) !important;
+}
+
+#joinButton{
+  padding:8px 15px !important;
+  margin:11px 0 !important;
+  line-height:22px !important;
+  border:1px solid rgba(225,193,92,.65) !important;
+  border-radius:999px !important;
+  color:#e7cd78 !important;
+}
+
+#joinButton:hover{
+  background:#d4af37 !important;
+  color:#17140f !important;
+}
+
+.mainmenu-right.style2{
+  margin:0 0 0 10px !important;
+  display:flex !important;
+  align-items:center !important;
+}
+
+/* Tablet/mobile */
+@media(max-width:991px){
+  .main-header.header-style2 .inner-container{
+    min-height:58px !important;
+    padding:0 12px !important;
+    justify-content:space-between;
+  }
+
+  .logo-box-style2{
+    width:190px !important;
+    max-width:190px !important;
+    height:58px !important;
+    flex:0 0 190px !important;
+  }
+
+  .logo-box-style2 img{
+    width:180px !important;
+    height:52px !important;
+    object-fit:contain !important;
+    object-position:left center !important;
+  }
+
+  .main-menu-box{
+    min-width:0;
+  }
+
+  .navbar-header{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-end !important;
+  }
+
+  .navbar-toggle{
+    display:block !important;
+    margin:0 !important;
+    padding:8px !important;
+    border:1px solid rgba(225,193,92,.6) !important;
+    border-radius:8px !important;
+    background:transparent !important;
+  }
+
+  .navbar-toggle .icon-bar{
+    background:#e1c15c !important;
+  }
+
+  .main-menu.style2 .navbar-collapse{
+    position:absolute;
+    top:58px;
+    left:0;
+    right:0;
+    width:100%;
+    max-height:calc(100vh - 58px);
+    overflow-y:auto;
+    background:#15120e;
+    padding:8px 12px 14px;
+  }
+
+  .main-menu.style2 .navigation{
+    display:block !important;
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+  }
+
+  .main-menu.style2 .navigation > li{
+    float:none !important;
+    width:100% !important;
+    margin:0 !important;
+  }
+
+  .main-menu.style2 .navigation > li > a{
+    padding:11px 12px !important;
+  }
+
+  .main-menu.style2 .navigation > li > ul{
+    position:static !important;
+    width:100% !important;
+    margin:0 0 5px !important;
+    box-shadow:none !important;
+    border-top:0 !important;
+    border-left:2px solid #d4af37 !important;
+  }
+
+  #joinButton{
+    display:block !important;
+    width:max-content;
+    margin:7px 12px !important;
+  }
+
+  .mainmenu-right.style2{
+    display:none !important;
+  }
+}
+
+@media(max-width:480px){
+  .logo-box-style2{
+    width:165px !important;
+    max-width:165px !important;
+    flex-basis:165px !important;
+  }
+
+  .logo-box-style2 img{
+    width:158px !important;
+  }
+}
+
+
+/* COMPACT FINAL — navbar only */
+@media (min-width: 992px) {
+  .main-header.header-style2 .inner-container {
+    min-height: 52px !important;
+    height: 52px !important;
+    padding: 0 22px !important;
+  }
+
+  .logo-box-style2 {
+    width: 205px !important;
+    max-width: 205px !important;
+    height: 52px !important;
+    flex: 0 0 205px !important;
+  }
+
+  .logo-box-style2 a {
+    height: 52px !important;
+  }
+
+  .logo-box-style2 img {
+    width: 195px !important;
+    height: 46px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+  }
+
+  .main-menu.style2 .navigation > li > a {
+    padding: 14px 9px !important;
+    line-height: 24px !important;
+    font-size: 13.5px !important;
+  }
+
+  .main-menu .navigation > li > ul {
+    top: 52px !important;
+  }
+
+  .mainmenu-right.style2 {
+    margin-left: 8px !important;
+  }
+
+  #joinButton {
+    min-height: 32px !important;
+    padding: 5px 13px !important;
+    margin: 10px 0 !important;
+    line-height: 20px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .main-header.header-style2 .inner-container {
+    min-height: 54px !important;
+    height: 54px !important;
+    padding: 0 10px !important;
+  }
+
+  .logo-box-style2 {
+    width: 175px !important;
+    max-width: 175px !important;
+    height: 54px !important;
+    flex: 0 0 175px !important;
+  }
+
+  .logo-box-style2 a {
+    height: 54px !important;
+  }
+
+  .logo-box-style2 img {
+    width: 168px !important;
+    height: 48px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+  }
+
+  .main-menu.style2 .navbar-collapse {
+    top: 54px !important;
+    max-height: calc(100vh - 54px) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-box-style2 {
+    width: 155px !important;
+    max-width: 155px !important;
+    flex-basis: 155px !important;
+  }
+
+  .logo-box-style2 img {
+    width: 150px !important;
+  }
+}
+
+
+/* === FINAL NAVBAR MOBILE + LOGO FIX === */
+.main-header.header-style2 .inner-container{
+  box-sizing:border-box!important;
+}
+.logo-box-style2,
+.logo-box-style2 a{
+  padding:0!important;
+  margin:0!important;
+  line-height:0!important;
+}
+.logo-box-style2 img{
+  display:block!important;
+  margin:0!important;
+  padding:0!important;
+  vertical-align:middle!important;
+}
+
+@media(min-width:992px){
+  .main-header.header-style2,
+  .main-header.header-style2 .inner-container{
+    height:52px!important;
+    min-height:52px!important;
+  }
+  .logo-box-style2,
+  .logo-box-style2 a{
+    height:52px!important;
+  }
+  .logo-box-style2{
+    display:flex!important;
+    align-items:center!important;
+  }
+  .logo-box-style2 a{
+    display:flex!important;
+    align-items:center!important;
+  }
+  .logo-box-style2 img{
+    width:195px!important;
+    height:44px!important;
+    max-height:44px!important;
+    object-fit:contain!important;
+    object-position:left center!important;
+  }
+}
+
+@media(max-width:991px){
+  .main-header.header-style2,
+  .main-header.header-style2 .inner-container{
+    height:54px!important;
+    min-height:54px!important;
+  }
+  .main-header.header-style2 .inner-container{
+    position:relative!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    overflow:visible!important;
+  }
+  .logo-box-style2{
+    float:none!important;
+    width:170px!important;
+    max-width:170px!important;
+    height:54px!important;
+    flex:0 0 170px!important;
+    display:flex!important;
+    align-items:center!important;
+    overflow:hidden!important;
+  }
+  .logo-box-style2 a{
+    width:100%!important;
+    height:54px!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+  .logo-box-style2 img{
+    width:165px!important;
+    height:46px!important;
+    max-height:46px!important;
+    object-fit:contain!important;
+    object-position:left center!important;
+  }
+  .main-menu-box{
+    position:static!important;
+    float:none!important;
+    margin:0!important;
+  }
+  .main-menu.style2 .navbar-header{
+    height:54px!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+  .main-menu.style2 .navbar-toggle{
+    position:relative!important;
+    top:auto!important;
+    right:auto!important;
+    float:none!important;
+    margin:0!important;
+  }
+
+  /* Bootstrap collapse is bypassed on mobile; our JS owns this menu. */
+  .main-menu.style2 .navbar-collapse{
+    display:none!important;
+    position:absolute!important;
+    top:54px!important;
+    left:0!important;
+    right:0!important;
+    width:100%!important;
+    height:auto!important;
+    max-height:calc(100vh - 54px)!important;
+    overflow-y:auto!important;
+    padding:10px 12px 14px!important;
+    background:#15120e!important;
+    border:0!important;
+    z-index:10000!important;
+  }
+  .main-menu.style2 .navbar-collapse.pe-open{
+    display:block!important;
+  }
+  .main-menu.style2 .navigation>li>ul{
+    display:none!important;
+    opacity:1!important;
+    visibility:visible!important;
+  }
+  .main-menu.style2 .navigation>li.pe-submenu-open>ul{
+    display:block!important;
+  }
+  .main-menu.style2 .navigation>li.dropdown>.dropdown-btn{
+    z-index:4!important;
+  }
+}
+
+/* =========================================================
+   PLANTASTIC EVENTS — GLOBAL STICKY NAVBAR
+   The theme's custom.js adds .stricky-fixed after scrolling.
+   ========================================================= */
+/*
+.main-header.header-style2 {
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+}
+
+.main-header.header-style2.stricky-fixed {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    z-index: 99999999 !important;
+    background: #11100d !important;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.22) !important;
+    animation: plantasticStickyDown 0.30s ease-out !important;
+}
+
+.main-header.header-style2.stricky-fixed .inner-container {
+    background: #11100d !important;
+}
+
+@keyframes plantasticStickyDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 992px) {
+    .main-header.header-style2.stricky-fixed,
+    .main-header.header-style2.stricky-fixed .inner-container {
+        height: 52px !important;
+        min-height: 52px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-header.header-style2.stricky-fixed,
+    .main-header.header-style2.stricky-fixed .inner-container {
+        height: 54px !important;
+        min-height: 54px !important;
+    }
+
+    .main-header.header-style2.stricky-fixed {
+        overflow: visible !important;
+    }
+
+    .main-header.header-style2.stricky-fixed .main-menu.style2 .navbar-collapse {
+        position: absolute !important;
+        top: 54px !important;
+        z-index: 100000000 !important;
+    }
+}
+*/
+
+
+/* =========================================================
+   PLANTASTIC — GLOBAL STICKY NAVBAR
+   ========================================================= */
+
+.main-header.header-style2.sticky-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+}
+
+.main-header.header-style2.sticky-wrapper.is-sticky {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+    margin: 0 !important;
+
+    z-index: 999999 !important;
+
+    background: #11100d !important;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+
+    animation: plantasticStickyIn 0.25s ease;
+}
+
+.main-header.header-style2.sticky-wrapper.is-sticky .inner-container {
+    background: #11100d !important;
+}
+
+@keyframes plantasticStickyIn {
+
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .main-header.header-style2.sticky-wrapper.is-sticky {
+        height: 54px !important;
+        min-height: 54px !important;
+        overflow: visible !important;
+    }
+
+    .main-header.header-style2.sticky-wrapper.is-sticky .inner-container {
+        height: 54px !important;
+        min-height: 54px !important;
+    }
+
+}

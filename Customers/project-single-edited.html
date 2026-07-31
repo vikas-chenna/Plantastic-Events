@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plantastic Events</title>
+
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+
+    <!-- Fixing Internet Explorer-->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<style>
+    #org {
+        font-size: 25px;
+    }
+
+    #company {
+        font-size: 20px;
+    }
+
+    .fb-btn {
+        position: relative;
+        top: 30px;
+        left: 0px;
+        display: block;
+        width: 150%;
+    }
+
+
+    /* Feedback Form */
+
+    .star-rating {
+        direction: rtl;
+        font-size: 2rem;
+        unicode-bidi: bidi-override;
+        display: inline-flex;
+        position: relative;
+        left: 5px;
+    }
+
+    .star-rating input[type="radio"] {
+        display: none;
+    }
+
+    .star-rating label {
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    .star-rating input[type="radio"]:checked~label {
+        color: #f5b301;
+    }
+
+    .star-rating label:hover,
+    .star-rating label:hover~label {
+        color: #f5b301;
+    }
+
+    .message-box {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #f8f9fa;
+    }
+
+    #bookeventSection {
+        width: 1000px;
+    }
+</style>
+
+<body>
+    <div class="boxed_wrapper">
+
+        <!-- <div class="preloader"></div> -->
+
+        <!--Start Main Header-->
+        <header class="main-header header-style2 stricky">
+            <div class="inner-container clearfix">
+                <div class="logo-box-style2 float-left">
+                    <a href="index-3.html">
+                        <!-- <img src="/images/resources/logo.png" alt="Awesome Logo"> -->
+                        <img src="/Customers/images/resources/logo.png" alt="Awesome Logo">
+                    </a>
+                </div>
+                <div class="main-menu-box float-right">
+                    <nav class="main-menu style2 clearfix">
+                        <div class="navbar-header clearfix">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li><a href="/Customers/index-3.html">Home</a></li>
+                                <li class="dropdown"><a href="#">Events</a>
+                                    <ul>
+                                        <li><a href="Anniversary.html">Anniverseries/Jubilees</a></li>
+                                        <li><a href="Ceremony.html">Ceremony</a> </li>
+                                        <li><a href="Couples.html">Couple Exclusive</a></li>
+                                        <li><a href="Birthday.html">Birthdays</a></li>
+                                        <li><a href="Party.html">Parties</a></li>
+                                        <li><a href="Corporate.html">Corporate</a></li>
+                                        <li><a href="Others.html">Others</a></li>
+                                    </ul>
+                                </li>
+                                
+                            <!-- Organizers -->
+                            <li>
+                                <a href="booking.php">Organizers</a>
+                            </li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li class="dropdown"><a href="about.html">About Us</a>
+                                    <ul>
+                                        <li><a href="about.html">About Company</a></li>
+                                        <li><a href="faq.html">FAQ’s</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="login.php">Join NOW / JOIN US</a></li>
+                                <!-- <li><a href="login.php">Sign In</a></li> -->
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="mainmenu-right style2">
+                        <div class="outer-search-box">
+                            <div class="seach-toggle"><i class="fa fa-search"></i></div>
+                            <ul class="search-box">
+                                <li>
+                                    <form method="post" action="#">
+                                        <div class="form-group">
+                                            <input type="search" name="search" placeholder="Search Here" required>
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Main Header-->
+
+        <!--Start breadcrumb area-->
+        <section class="breadcrumb-area style2" style="background-image: url(images/resources/breadcrumb-bg-2.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="inner-content-box clearfix">
+                            <div class="title-s2 text-center">
+                                <span>Your Events</span>
+                                <h1>Vikas Chenna</h1>
+                            </div>
+                            <div class="breadcrumb-menu float-left">
+                                <ul class="clearfix">
+                                    <li><a href="index-2.html">Home</a></li>
+                                    <li><a href="booking.html">bookings</a></li>
+                                    <li class="active">Vikas Chenna</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End breadcrumb area-->
+
+        <!--Start Project Description area-->
+        <section class="project-description-area">
+            <div class="pattern-bg wow slideInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
+                <img src="images/pattern/project-description-pattern.jpg" alt="Pattern Bg">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="project-description-image-box">
+                            <img src="images/projects/project-single/project-description-1.jpg" alt="Awesome Image">
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="project-description-content">
+                            <div class="sec-title">
+                                <p id="org">Vikas Chenna</p>
+                                <div class="title" id="company">Your Events</div>
+                            </div>
+                            <div class="inner-content">
+                                <p>Idea of denouncing pleasures and praising pain was born will give you a com-pleted
+                                    account system, and expound the actual teachings of the great explorer of the truth,
+                                    the master builder of human happiness. No one rejects,
+                                    dislikes, or avoids pleasure itself, because it is pleasure.</p>
+                                <div class="bottpm-text">
+                                    <p>Because those who do not know how pursue, Complete account that all system,
+                                        expound the actual teachings of the great explorer of the truth,</p>
+                                </div>
+                                <ul>
+                                    <li>Nam libero tempore, cum soluta</li>
+                                    <li>Est eligendi optio cumque nihil impedit quo</li>
+                                    <li>Omnis dolor repellendus temporibus autem </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Project Description area-->
+
+        <!--Start Project Info Area-->
+        <section class="project-info-area">
+            <div class="pattern-bg wow slideInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
+                <img src="images/pattern/project-info-patten.jpg" alt="Pattern Bg">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="project-info-content">
+                            <div class="project-info-title">
+                                <h3>Organizer Info</h3>
+                            </div>
+                            <div class="inner-content">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-maps-and-location1"></span>
+                                        </div>
+                                        <div class="title">
+                                            <h4>Location</h4>
+                                            <span>Dindoli Surat</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-ruler"></span>
+                                        </div>
+                                        <div class="title">
+                                            <h4>Square Meters</h4>
+                                            <span>452,65m<sup>2</sup></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-calendar"></span>
+                                        </div>
+                                        <div class="title">
+                                            <h4>Since</h4>
+                                            <span>2018</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-price"></span>
+                                        </div>
+                                        <div class="title">
+                                            <h4>Price Value</h4>
+                                            <span>$65m</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-group"></span>
+                                        </div>
+                                        <div class="title">
+                                            <h4>Project Head</h4>
+                                            <span>Mr. John Meckency</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="view-all-member style2 fb-btn">
+                                    <button class="btn-one">Send us Feedback<span class="icon-support1"></span></button>
+                                </div> -->
+
+                            <!-- Feedback & Message Buttons -->
+                            <div class="view-all-member style2 fb-btn d-flex gap-2">
+                                <button class="btn-one" id="togglebookeventBtn">
+                                    Book Event
+                                </button>
+                                <button class="btn-one" id="toggleFeedbackBtn">
+                                    Send us Feedback
+                                </button>
+
+                                <button class="btn-one" id="toggleMessageBtn">
+                                    Comunicate <i class="bi bi-chat-dots-fill"></i>
+                                </button>
+                            </div>
+
+
+                            <div class="container my-5" style="display: none; margin-top: 50px;" id="bookeventSection">
+                                <div class="card shadow-lg">
+                                    <div class="card-header bg-primary text-white">
+                                        <h3 class="mb-0">Book Your Event</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="#" method="POST" class="row g-3">
+
+                                            <!-- Organizer Info -->
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Organizer Name</label>
+                                                    <input type="text" name="Organizer_name" class="form-control"
+                                                        required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Organizer Company Name</label>
+                                                    <input type="text" name="organizer_company_name"
+                                                        class="form-control" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Organizer Email</label>
+                                                    <input type="email" name="Organizers_email" class="form-control"
+                                                        required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Organizer Phone</label>
+                                                    <input type="number" name="Organizers_phone" class="form-control"
+                                                        required>
+                                                </div>
+
+                                            <hr>
+                                            <!-- Customer Info -->
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Customer Name</label>
+                                                    <input type="text" name="customer_name" class="form-control"
+                                                        required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Customer Email</label>
+                                                    <input type="email" name="organizer_Email"
+                                                        class="form-control" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Customer Phone</label>
+                                                    <input type="number" name="customer_phone" class="form-control"
+                                                        required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Customer address</label>
+                                                    <!-- <input type="text" name="Organizers_phone" class="form-control"
+                                                        required> -->
+                                                        <textarea name="customer_address" class="form-control"></textarea>
+                                                </div>
+                                            <hr>
+                                            <!-- Event Info -->
+                                            <div class="col-md-6">
+                                                <label class="form-label">Event Name</label>
+                                                <input type="text" name="event_name" class="form-control" required>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">Event Type</label>
+                                                <select name="event_type" class="form-select" required>
+                                                    <option value="">Select</option>
+                                                    <option>Wedding</option>
+                                                    <option>Birthday</option>
+                                                    <option>Corporate</option>
+                                                    <option>Concert</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label class="form-label">Event Description</label>
+                                                <textarea name="event_description" rows="3"
+                                                    class="form-control"></textarea>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label class="form-label">Event Date</label>
+                                                <input type="date" name="event_date" class="form-control" required>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label class="form-label">Start Time</label>
+                                                <input type="time" name="start_time" class="form-control">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label class="form-label">End Time</label>
+                                                <input type="time" name="end_time" class="form-control">
+                                            </div>
+
+                                            <!-- Venue Info -->
+                                            <div class="col-md-6">
+                                                <label class="form-label">Venue Name</label>
+                                                <input type="text" name="venue_name" class="form-control">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">Venue Address</label>
+                                                <textarea name="venue_address" rows="2" class="form-control"></textarea>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">City</label>
+                                                <input type="text" name="city" class="form-control">
+                                            </div>
+
+                                            <!-- Guests -->
+                                            <div class="col-md-6">
+                                                <label class="form-label">Expected Guests</label>
+                                                <input type="number" name="guest_count" class="form-control" min="1">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">Seating Preference</label>
+                                                <select name="seating" class="form-select">
+                                                    <option value="">Select</option>
+                                                    <option>Round Tables</option>
+                                                    <option>Theater Style</option>
+                                                    <option>Classroom Style</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Organizer Info -->
+                                            <div class="col-md-6">
+                                                <label class="form-label">Organizer Name</label>
+                                                <input type="text" name="organizer_name" class="form-control" required>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">Email</label>
+                                                <input type="email" name="email" class="form-control" required>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">Phone</label>
+                                                <input type="tel" name="phone" class="form-control" required>
+                                            </div>
+
+                                            <!-- Services -->
+                                            <div class="col-md-6">
+                                                <label class="form-label">Catering</label>
+                                                <select name="catering" class="form-select">
+                                                    <option>No</option>
+                                                    <option>Yes - Veg</option>
+                                                    <option>Yes - Non-Veg</option>
+                                                    <option>Both</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">Decoration Theme</label>
+                                                <input type="text" name="decoration_theme" class="form-control">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">Photography</label>
+                                                <select name="photography" class="form-select">
+                                                    <option>No</option>
+                                                    <option>Yes</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Budget -->
+                                            <div class="col-md-6">
+                                                <label class="form-label">Estimated Budget (INR)</label>
+                                                <input type="number" name="budget" class="form-control">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">Payment Method</label>
+                                                <select name="payment_method" class="form-select">
+                                                    <option>Cash</option>
+                                                    <option>Card</option>
+                                                    <option>UPI</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Other -->
+                                            <div class="col-12">
+                                                <label class="form-label">Additional Notes</label>
+                                                <textarea name="notes" rows="3" class="form-control"></textarea>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label">How did you hear about us?</label>
+                                                <input type="text" name="referral" class="form-control">
+                                            </div>
+
+                                            <!-- Submit -->
+                                            <div class="col-12 text-center">
+                                                <button type="submit" class="btn btn-primary px-4">Submit
+                                                    Booking</button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Feedback Form -->
+                            <div id="feedbackForm" style="display: none; margin-top: 50px;">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="feedbackText" class="form-label" style="margin-bottom:10px;">
+                                            <h3>Your Feedback</h3>
+                                        </label>
+                                        <textarea class="form-control" id="feedbackText" rows="6" cols="13"
+                                            placeholder="Write your feedback..."></textarea>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">
+                                            <h3>Rate Us</h3>
+                                        </label>
+                                        <div class="star-rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"
+                                                title="5 stars">★</label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                                                title="4 stars">★</label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"
+                                                title="3 stars">★</label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
+                                                title="2 stars">★</label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                                                title="1 star">★</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-left">
+                                        <button type="submit" class="btn btn-success">Submit Feedback</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Message Section -->
+                            <div id="messageSection" style="display: none; margin-top: 50px;">
+                                <!-- Tabs -->
+                                <ul class="nav nav-tabs mb-3" id="messageTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="send-tab" data-bs-toggle="tab"
+                                            data-bs-target="#send" type="button" role="tab">Send</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="receive-tab" data-bs-toggle="tab"
+                                            data-bs-target="#receive" type="button" role="tab">Notification</button>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab Contents -->
+                                <div class="tab-content" id="messageTabContent">
+                                    <div class="tab-pane fade show active" id="send" role="tabpanel">
+                                        <form action="store.php" method="post">
+                                            <div class="mb-3">
+                                                <label for="messageText">Write a message</label>
+                                                <textarea class="form-control" id="messageText" name="messageText"
+                                                    rows="4" required></textarea>
+                                            </div>
+                                            <button type="submit" name="submit_message"
+                                                class="btn btn-primary">Send</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                id="closeSendSection">Close</button>
+                                        </form>
+                                    </div>
+
+                                    <!-- <div class="tab-pane fade" id="receive" role="tabpanel">
+                                        <div class="mt-3">
+                                        <p><strong>Admin:</strong> Welcome to the platform!</p>
+                                        <p><strong>Support:</strong> Let us know if you need any help.</p>
+                                        </div>
+                                    </div> -->
+
+
+                                    <!-- Receive Tab -->
+                                    <div class="tab-pane fade" id="receive" role="tabpanel">
+                                        <div class="mt-3">
+                                            <div class="message-box mb-3">
+                                                <p><strong>Admin:</strong> Welcome to the platform!</p>
+                                                <button type="button" class="btn btn-sm btn-outline-primary reply-btn"
+                                                    data-reply="@Admin">Reply</button>
+
+                                            </div>
+
+                                            <div class="message-box mb-3">
+                                                <p><strong>Support:</strong> Let us know if you need any help.</p>
+                                                <button type="button" class="btn btn-sm btn-outline-primary reply-btn"
+                                                    data-reply="@Support">Reply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="project-info-image-box">
+                            <img src="images/projects/project-single/project-info-1.jpg" alt="Awesome Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Project Info Area-->
+
+
+
+        <!--Start Testimonial Style2 Area-->
+        <section class="testimonial-style2-area">
+            <div class="container">
+                <div class="sec-title text-center">
+                    <p>Memorable Experiences Shared</p>
+                    <div class="title">Our Happy <span>Clients</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="testimonial-style2-content">
+                            <div class="testimonial-carousel owl-carousel owl-theme">
+                                <!--Start Single Testimonial style2-->
+                                <div class="single-testimonial-style2 text-center">
+                                    <div class="inner-content">
+                                        <div class="static-content">
+                                            <div class="quote-icon">
+                                                <span class="icon-quote3"></span>
+                                            </div>
+                                            <div class="text-box">
+                                                <p>"Absolutely Amazing!"
+                                                    Plantastic Events made my dream wedding come to life! Highly
+                                                    recommend them for any special occasion!</p>
+                                            </div>
+                                            <div class="client-info">
+                                                <div class="review-box">
+                                                    <ul>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <h3>Meenakshi Rathor</h3>
+                                            </div>
+                                        </div>
+                                        <div class="overlay-content">
+                                            <div class="img-box">
+                                                <img src="images/testimonial/testi-style2-1.png" alt="Awesome Image">
+                                            </div>
+                                            <div class="text-box">
+                                                <p>From the decorations to the organization, everything was flawless.
+                                                    Their attention to detail is unmatched.</p>
+                                                <div class="quote-icon">
+                                                    <span class="icon-quote3"></span>
+                                                </div>
+                                            </div>
+                                            <div class="client-info">
+                                                <div class="review-box">
+                                                    <ul>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <h3>Minakshi Rathor</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Single Testimonial style2 -->
+
+                                <!--Start Single Testimonial style2-->
+                                <div class="single-testimonial-style2 text-center">
+                                    <div class="inner-content">
+                                        <div class="static-content">
+                                            <div class="quote-icon">
+                                                <span class="icon-quote3"></span>
+                                            </div>
+                                            <div class="text-box">
+                                                <p>"Perfect Execution!"
+                                                    I hired Plantastic Events for my daughter’s birthday party, and they
+                                                    went above and beyond!</p>
+                                            </div>
+                                            <div class="client-info">
+                                                <div class="review-box">
+                                                    <ul>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <h3>Saraswati Chandra</h3>
+                                            </div>
+                                        </div>
+                                        <div class="overlay-content">
+                                            <div class="img-box">
+                                                <img src="images/testimonial/testi-style2-2.png" alt="Awesome Image">
+                                            </div>
+                                            <div class="text-box">
+                                                <p>The theme, activities, and setup were all magical. The team is
+                                                    incredibly professional and creative. I couldn’t be happier!</p>
+                                                <div class="quote-icon">
+                                                    <span class="icon-quote3"></span>
+                                                </div>
+                                            </div>
+                                            <div class="client-info">
+                                                <div class="review-box">
+                                                    <ul>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <h3>Saraswati Chandra</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Single Testimonial style2 -->
+
+                                <!--Start Single Testimonial style2-->
+                                <div class="single-testimonial-style2 text-center">
+                                    <div class="inner-content">
+                                        <div class="static-content">
+                                            <div class="quote-icon">
+                                                <span class="icon-quote3"></span>
+                                            </div>
+                                            <div class="text-box">
+                                                <p>Plantastic Events made event planning so easy for us. They turned our
+                                                    corporate gala into a night to remember.</p>
+                                            </div>
+                                            <div class="client-info">
+                                                <div class="review-box">
+                                                    <ul>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <h3>Mahima Chaudhary</h3>
+                                            </div>
+                                        </div>
+                                        <div class="overlay-content">
+                                            <div class="img-box">
+                                                <img src="images/testimonial/testi-style2-3.png" alt="Awesome Image">
+                                            </div>
+                                            <div class="text-box">
+                                                <p>Their team took care of every little detail, and the outcome was
+                                                    stunning. They turned our corporate gala into a night to remember.
+                                                </p>
+                                                <div class="quote-icon">
+                                                    <span class="icon-quote3"></span>
+                                                </div>
+                                            </div>
+                                            <div class="client-info">
+                                                <div class="review-box">
+                                                    <ul>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <h3>Mahima Chaudhary</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Single Testimonial style2 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Testimonial Style2 Area-->
+
+
+        <!--Start Latest Projects Area-->
+        <section class="latest-projects-area">
+            <div class="container">
+                <div class="sec-title">
+                    <!-- <p>Projects</p> -->
+                    <div class="title clr-white">Our Latest <span>Events</span></div>
+                </div>
+            </div>
+            <div class="container-fluid latest-projects-v3">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="project-carousel-v3 owl-carousel owl-theme">
+                            <!--Start Single excellent project-->
+                            <div class="single-project-style3">
+                                <div class="img-holder">
+                                    <img src="images/projects/lat-pro-v3-1.jpg" alt="Awesome Image">
+                                    <div class="overlay-content">
+                                        <div class="inner-content">
+                                            <div class="links-icons">
+                                                <a href="project-single.html"><span class="icon-link"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-holder text-center">
+                                    <span>Modern Design</span>
+                                    <h3>Art Family Residence</h3>
+                                </div>
+                            </div>
+                            <!--End Single excellent project-->
+                            <!--Start Single excellent project-->
+                            <div class="single-project-style3">
+                                <div class="img-holder">
+                                    <img src="images/projects/lat-pro-v3-2.jpg" alt="Awesome Image">
+                                    <div class="overlay-content">
+                                        <div class="inner-content">
+                                            <div class="links-icons">
+                                                <a href="project-single.html"><span class="icon-link"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-holder text-center">
+                                    <span>Traditional</span>
+                                    <h3>Office Partition Walls</h3>
+                                </div>
+                            </div>
+                            <!--End Single excellent project-->
+                            <!--Start Single excellent project-->
+                            <div class="single-project-style3">
+                                <div class="img-holder">
+                                    <img src="images/projects/lat-pro-v3-3.jpg" alt="Awesome Image">
+                                    <div class="overlay-content">
+                                        <div class="inner-content">
+                                            <div class="links-icons">
+                                                <a href="project-single.html"><span class="icon-link"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-holder text-center">
+                                    <span>Contemporary</span>
+                                    <h3>Metropolitan Museum</h3>
+                                </div>
+                            </div>
+                            <!--End Single excellent project-->
+                            <!--Start Single excellent project-->
+                            <div class="single-project-style3">
+                                <div class="img-holder">
+                                    <img src="images/projects/lat-pro-v3-4.jpg" alt="Awesome Image">
+                                    <div class="overlay-content">
+                                        <div class="inner-content">
+                                            <div class="links-icons">
+                                                <a href="project-single.html"><span class="icon-link"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-holder text-center">
+                                    <span>Modern Design</span>
+                                    <h3>Glass Office Screen</h3>
+                                </div>
+                            </div>
+                            <!--End Single excellent project-->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Latest Projects Area-->
+
+
+        <!--Start Footer Contact Info Area-->
+        <section class="footer-contact-info-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <ul class="footer-contact-info clearfix">
+                            <li>
+                                <div class="single-footer-contact-info">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-global"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Flat 20, Reynolds Neck, North<br> Helenaville, FV77 8WS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-footer-contact-info">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-support1"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>+324 123 45 978 & 01<br> <span>Mon - Friday:</span> 9.00am to 6.00pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-footer-contact-info">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-shipping-and-delivery"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>abc@yourdomain.com<br> crystalocareer@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Footer Contact Info Area-->
+
+        <!--Start footer bottom area-->
+        <section class="footer-bottom-area style3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="copyright-text text-center">
+                            <p><a href="https://www.templateshub.net" target="_blank">Templates Hub</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End footer bottom area-->
+
+    </div>
+
+
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.paroller.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/wow.js"></script>
+
+    <script src="js/map-helper.js"></script>
+
+    <script src="assets/language-switcher/jquery.polyglot.language.switcher.js"></script>
+    <script src="assets/timepicker/timePicker.js"></script>
+    <script src="assets/html5lightbox/html5lightbox.js"></script>
+
+    <!-- thm custom script -->
+    <script src="js/custom.js"></script>
+
+
+
+    <script>
+        const feedbackBtn = document.getElementById("toggleFeedbackBtn");
+        const messageBtn = document.getElementById("toggleMessageBtn");
+        const bookeventbtn = document.getElementById("togglebookeventBtn");
+        const feedbackForm = document.getElementById("feedbackForm");
+        const messageSection = document.getElementById("messageSection");
+        const bookeventSection = document.getElementById("bookeventSection");
+
+        feedbackBtn.addEventListener("click", function () {
+            // Hide message section
+            messageSection.style.display = "none";
+            bookeventSection.style.display = "none";
+
+            // Toggle feedback
+            feedbackForm.style.display = (feedbackForm.style.display === "block") ? "none" : "block";
+        });
+
+        messageBtn.addEventListener("click", function () {
+            // Hide feedback section
+            feedbackForm.style.display = "none";
+            bookeventSection.style.display = "none";
+
+            // Toggle message section
+            messageSection.style.display = (messageSection.style.display === "block") ? "none" : "block";
+
+            // Always reset tab to 'Send' when showing message section
+            const sendTab = new bootstrap.Tab(document.querySelector('#send-tab'));
+            sendTab.show();
+        });
+
+        bookeventbtn.addEventListener("click", function () {
+            // Hide feedback section
+            feedbackForm.style.display = "none";
+            messageSection.style.display = "none";
+
+            // Toggle message section
+            bookeventSection.style.display = (messageSection.style.display === "block") ? "none" : "block";
+        });
+
+
+        // Reply buttons logic
+        document.querySelectorAll('.reply-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const replyTo = this.getAttribute('data-reply');
+                messageSection.style.display = "block";
+                feedbackForm.style.display = "none";
+
+                // Switch to Send tab
+                const sendTab = new bootstrap.Tab(document.querySelector('#send-tab'));
+                sendTab.show();
+
+                // Pre-fill textarea
+                messageText.value = `${replyTo}, `;
+                messageText.focus();
+            });
+        });
+
+        // Close button to go back to Receive tab
+        document.getElementById("closeSendSection").addEventListener("click", function () {
+            const receiveTab = new bootstrap.Tab(document.querySelector('#receive-tab'));
+            receiveTab.show();
+        });
+
+        const messageText = document.getElementById("messageText");
+        const closeBtn = document.getElementById("closeSendSection");
+
+        if (closeBtn) {
+            closeBtn.addEventListener("click", function () {
+                // Switch to Receive tab
+                const receiveTab = new bootstrap.Tab(document.querySelector('#receive-tab'));
+                receiveTab.show();
+
+                // Clear textarea so it's empty next time
+                messageText.value = "";
+            });
+        }
+
+
+    </script>
+
+
+
+    <!-- Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- project-single 06:54:06 GMT -->
+
+</html>

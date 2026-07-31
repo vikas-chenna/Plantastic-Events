@@ -1,0 +1,21 @@
+:root{--gold:#c99a2e;--gold2:#e3bf62;--ink:#17140f;--cream:#faf7f0}
+body.auth-page{
+  background:
+    radial-gradient(700px 380px at 10% 0%,rgba(201,154,46,.18),transparent 60%),
+    radial-gradient(600px 320px at 100% 100%,rgba(227,191,98,.12),transparent 60%),
+    #11100d!important;
+}
+.auth-card{border:1px solid rgba(201,154,46,.22)!important;box-shadow:0 28px 70px rgba(0,0,0,.28)!important}
+.logo-mark{background:linear-gradient(135deg,var(--gold2),var(--gold),#94640f)!important;color:#17140f!important}
+.btn-auth{background:linear-gradient(135deg,var(--gold2),var(--gold))!important;color:#17140f!important}
+.auth-tabs label{transition:.2s ease}
+.auth-tabs input:checked+label{background:linear-gradient(135deg,var(--gold2),var(--gold))!important;color:#17140f!important}
+.auth-links a{color:#a87516!important}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+  border-color:var(--gold)!important;box-shadow:0 0 0 4px rgba(201,154,46,.16)!important
+}
+@media(max-width:600px){
+  .auth-wrap{padding:18px 12px!important}
+  .auth-card{padding:22px 16px!important;border-radius:18px!important}
+  .auth-tabs{grid-template-columns:1fr 1fr!important}
+}

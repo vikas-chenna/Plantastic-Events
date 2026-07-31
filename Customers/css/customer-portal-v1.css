@@ -1,0 +1,61 @@
+:root{
+  --portal-gold:#d4af37;
+  --portal-gold-deep:#a97b13;
+  --portal-ink:#17140f;
+  --portal-cream:#faf7ef;
+  --portal-line:#e9e0cd;
+  --portal-muted:#746c5f;
+}
+.profile.section{background:var(--portal-cream);padding:42px 28px 70px;min-height:70vh}
+.profile.section>.row{max-width:1280px;margin:0 auto;align-items:flex-start}
+.profile .card{border:1px solid var(--portal-line);border-radius:20px;box-shadow:0 12px 35px rgba(50,37,10,.07);overflow:hidden}
+.customer-profile-side{position:sticky;top:100px}
+.customer-profile-side .card{background:linear-gradient(180deg,#1a1711,#252016);color:#fff}
+.customer-profile-side .profile-card{padding:30px 20px!important}
+.customer-profile-side .profile-card img{width:108px;height:108px;object-fit:cover;border:4px solid rgba(212,175,55,.55)}
+.customer-profile-side h2{color:#fff;margin-top:14px}
+.customer-profile-side h6{color:#cfc5b1;font-weight:400}
+.customer-profile-side .social-links a{color:#e4c96d}
+.customer-profile-side form button{margin-top:18px;border:1px solid rgba(212,175,55,.55);background:transparent;color:#f0d87c;border-radius:10px;padding:9px 18px}
+
+.customer-profile-main>.card>.card-body{display:grid;grid-template-columns:220px minmax(0,1fr);gap:0;padding:0!important}
+.customer-account-nav{display:flex!important;flex-direction:column;flex-wrap:nowrap!important;border:0!important;background:#fffaf0;padding:18px!important;gap:6px;min-height:620px}
+.customer-account-nav .nav-item{width:100%}
+.customer-account-nav .nav-link{width:100%;text-align:left;border:0!important;border-radius:11px!important;color:#4f473a!important;padding:12px 14px!important;font-weight:600}
+.customer-account-nav .nav-link:hover{background:#f5ecd7}
+.customer-account-nav .nav-link.active{background:linear-gradient(135deg,#dfc15f,#b98718)!important;color:#17140f!important;box-shadow:0 8px 20px rgba(169,123,19,.18)}
+.customer-profile-main .tab-content{padding:26px;min-width:0}
+.profile .card-title{color:#9d7317!important}
+.profile .label{color:#6e6250!important}
+.profile .btn-primary,.portal-primary{background:linear-gradient(135deg,#dfc15f,#b98718)!important;border:0!important;color:#17140f!important;font-weight:700}
+.profile .form-control:focus,.profile .form-select:focus{border-color:#c79b2e;box-shadow:0 0 0 .2rem rgba(212,175,55,.14)}
+
+.customer-message-head{display:flex;justify-content:space-between;gap:16px;margin-bottom:20px}
+.customer-message-head .eyebrow{font-size:.75rem;letter-spacing:.12em;color:#a77b18;font-weight:800}
+.customer-message-head h4{margin:4px 0 4px;color:#201b13}
+.customer-message-head p{color:var(--portal-muted);margin:0}
+.compose-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.compose-card{border:1px solid var(--portal-line);background:#fff;border-radius:16px;padding:20px}
+.compose-card h5{margin:12px 0 4px;color:#241e14}
+.compose-card p{color:var(--portal-muted);font-size:.92rem}
+.compose-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#fbf0cd;color:#a77b18;font-size:1.15rem}
+.conversation-title{margin:28px 0 12px;color:#241e14}
+#notification .accordion-item{border:1px solid var(--portal-line);border-radius:12px!important;overflow:hidden;margin-bottom:10px}
+#notification .accordion-button:not(.collapsed){background:#fff6dc;color:#6e5011}
+#notification .accordion-button:focus{box-shadow:none;border-color:#d4af37}
+
+@media(max-width:991px){
+  .profile.section{padding:26px 14px 50px}
+  .customer-profile-side{position:static;margin-bottom:16px}
+  .customer-profile-main>.card>.card-body{grid-template-columns:1fr}
+  .customer-account-nav{min-height:auto;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));padding:12px}
+  .customer-account-nav .nav-link{text-align:center;padding:10px 8px!important;font-size:.9rem}
+}
+@media(max-width:767px){
+  .customer-account-nav{display:flex!important;flex-direction:row;overflow-x:auto;scrollbar-width:none}
+  .customer-account-nav::-webkit-scrollbar{display:none}
+  .customer-account-nav .nav-item{width:auto;flex:0 0 auto}
+  .customer-account-nav .nav-link{white-space:nowrap}
+  .customer-profile-main .tab-content{padding:16px}
+  .compose-grid{grid-template-columns:1fr}
+}

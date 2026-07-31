@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../Project"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "crystalo-interior-design-html-template",
+		"liveServer.settings.port": 5501
+	}
+}

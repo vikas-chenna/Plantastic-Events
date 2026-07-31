@@ -1,0 +1,50 @@
+/* Plantastic Events: original golden identity, refined rather than replaced */
+:root{
+  --pe-gold:#d4af37;
+  --pe-gold-soft:#e8cf78;
+  --pe-gold-deep:#a77b12;
+  --pe-ink:#17140f;
+  --pe-cream:#fbf8f1;
+}
+html,body{max-width:100%;overflow-x:hidden}
+img,video,svg{max-width:100%;height:auto}
+
+/* Keep the legacy header proportions on desktop. */
+@media (min-width: 992px){
+  .main-header.header-style2 .inner-container{padding-top:0!important;padding-bottom:0!important}
+  .logo-box-style2{max-width:190px!important}
+  .main-menu.style2 .navigation>li>a{
+    padding-top:22px!important;
+    padding-bottom:22px!important;
+    line-height:24px!important;
+  }
+  .mainmenu-right.style2{margin-top:0!important}
+}
+
+/* Gold remains where the original design intended it. */
+.thm-clr{color:var(--pe-gold)!important}
+.thm-bg-clr,.btn-one,.slide-style2-button{
+  background:linear-gradient(135deg,var(--pe-gold-soft),var(--pe-gold-deep))!important;
+  border-color:transparent!important;
+}
+.main-menu.style2 .navigation>li.current>a,
+.main-menu.style2 .navigation>li:hover>a{color:var(--pe-gold)!important}
+.main-menu .navigation>li>ul{border-top-color:var(--pe-gold)!important}
+
+/* Mobile: preserve design, only make it usable. */
+@media (max-width:991px){
+  .main-header.header-style2 .inner-container{padding-left:14px!important;padding-right:14px!important}
+  .logo-box-style2{max-width:165px!important}
+  .main-menu-box{max-width:100%!important}
+  .navbar-toggle{margin:8px 0!important}
+  .navbar-collapse{max-width:100vw!important}
+  .main-menu.style2 .navigation{max-width:100%!important}
+  .main-menu.style2 .navigation>li>a{white-space:normal!important}
+  .mainmenu-right.style2{display:none!important}
+}
+@media(max-width:767px){
+  .sec-title h1,.sec-title h2{font-size:clamp(1.7rem,8vw,2.3rem)!important;line-height:1.15!important}
+  .slide-content .big-title{font-size:clamp(2rem,10vw,3.2rem)!important;line-height:1.08!important}
+  .slide-content .text{font-size:1rem!important;line-height:1.5!important;white-space:normal!important}
+  .container,.container-fluid{max-width:100%!important}
+}

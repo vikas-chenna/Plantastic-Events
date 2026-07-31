@@ -1,0 +1,45 @@
+# ==========================================
+# Plantastic Events - Git Ignore
+# ==========================================
+
+# Sensitive configuration
+config.php
+.env
+.env.local
+.env.*.local
+
+# Keep environment template
+!.env.example
+
+# Runtime mail / notification data
+storage/mail_log/
+storage/admin_inbox.json
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Project backup/archive files
+*.zip
+*.rar
+*.7z
+
+# Composer local executable
+composer.phar
+
+# Composer dependencies
+/vendor/

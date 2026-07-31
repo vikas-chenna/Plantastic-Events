@@ -1,0 +1,265 @@
+:root{--gold:#d4af37;--gold2:#e1c15c;--deep:#a97b13;--cream:#faf7ef;--line:#e8dfcc;--muted:#766d5e}
+@media(min-width:992px){.main-header.header-style2 .inner-container{min-height:68px!important;padding-top:0!important;padding-bottom:0!important}.logo-box-style2{max-width:165px!important}.logo-box-style2 img{max-height:54px!important;width:auto!important}.main-menu.style2 .navigation>li>a{padding-top:18px!important;padding-bottom:18px!important;line-height:24px!important}.mainmenu-right.style2{margin-top:0!important}}
+.profile.section{background:var(--cream);padding:0!important;min-height:calc(100vh - 68px)}
+.profile.section>.row{max-width:none!important;width:100%!important;margin:0!important;display:grid!important;grid-template-columns:270px minmax(0,1fr);gap:0!important;align-items:stretch}
+.customer-profile-side{width:auto!important;max-width:none!important;padding:0!important;margin:0!important;position:sticky;top:68px;height:calc(100vh - 68px);z-index:10}
+.customer-profile-side>.card{height:100%;margin:0!important;border:0!important;border-radius:0!important;background:linear-gradient(180deg,#17140f,#252016);color:#fff;box-shadow:10px 0 30px rgba(38,27,8,.08);overflow-y:auto}
+.customer-profile-side .profile-card{padding:30px 20px 22px!important}.customer-profile-side .profile-card img{width:96px;height:96px;object-fit:cover;border:4px solid rgba(212,175,55,.55)}.customer-profile-side h2{color:#fff;margin-top:13px;font-size:1.25rem}.customer-profile-side h6{color:#cfc5b1;font-weight:400}.customer-profile-side .social-links a{color:#e6cc70}
+.customer-profile-main{width:auto!important;max-width:none!important;padding:0!important;margin:0!important;min-width:0}.customer-profile-main>.card{margin:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent}.customer-profile-main>.card>.card-body{display:grid;grid-template-columns:220px minmax(0,1fr);padding:0!important;min-height:calc(100vh - 68px)}
+.customer-account-nav{display:flex!important;flex-direction:column;flex-wrap:nowrap!important;gap:6px;border:0!important;background:#fffaf0;padding:24px 16px!important;margin:0!important}.customer-account-nav .nav-item{width:100%}.customer-account-nav .nav-link{width:100%;text-align:left;border:0!important;border-radius:11px!important;color:#4f473a!important;padding:12px 14px!important;font-weight:600}.customer-account-nav .nav-link:hover{background:#f4ead2}.customer-account-nav .nav-link.active{background:linear-gradient(135deg,var(--gold2),var(--deep))!important;color:#17140f!important}
+.customer-profile-main .tab-content{padding:30px clamp(20px,3vw,48px);min-width:0;max-width:1200px;width:100%}.profile .card-title{color:#9d7317!important}.profile .btn-primary,.portal-primary{background:linear-gradient(135deg,var(--gold2),var(--deep))!important;border:0!important;color:#17140f!important;font-weight:700}
+.customer-message-head{margin-bottom:20px}.customer-message-head .eyebrow{font-size:.75rem;letter-spacing:.12em;color:#a77b18;font-weight:800}.customer-message-head p,.compose-card p{color:var(--muted)}.compose-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.compose-card{border:1px solid var(--line);background:#fff;border-radius:16px;padding:20px}.compose-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#fbf0cd;color:#a77b18}.conversation-title{margin:28px 0 12px}
+@media(max-width:1199px){.profile.section>.row{grid-template-columns:235px minmax(0,1fr)}.customer-profile-main>.card>.card-body{grid-template-columns:190px minmax(0,1fr)}}
+@media(max-width:991px){.profile.section{padding:16px!important}.profile.section>.row{display:block!important}.customer-profile-side{position:static;height:auto;margin-bottom:14px!important}.customer-profile-side>.card{border-radius:18px!important}.customer-profile-main>.card>.card-body{grid-template-columns:1fr;min-height:auto}.customer-account-nav{display:flex!important;flex-direction:row;overflow-x:auto;padding:10px!important}.customer-account-nav .nav-item{width:auto;flex:0 0 auto}.customer-account-nav .nav-link{white-space:nowrap}.customer-profile-main .tab-content{padding:20px;max-width:none}}
+@media(max-width:700px){.profile.section{padding:10px!important}.customer-profile-main .tab-content{padding:15px}.compose-grid{grid-template-columns:1fr}}
+
+
+/* FINAL profile sidebar contrast */
+.customer-profile-side,
+.customer-profile-side > .card,
+.customer-profile-side .card-body,
+.customer-profile-side .profile-card {
+  color: #f8f2e7 !important;
+}
+
+.customer-profile-side h1,
+.customer-profile-side h2,
+.customer-profile-side h3,
+.customer-profile-side h4,
+.customer-profile-side h5,
+.customer-profile-side h6,
+.customer-profile-side p,
+.customer-profile-side span,
+.customer-profile-side label {
+  color: #f8f2e7 !important;
+}
+
+.customer-profile-side a,
+.customer-profile-side i {
+  color: #e4c766 !important;
+}
+
+.customer-profile-side .text-muted,
+.customer-profile-side small {
+  color: #cfc4b2 !important;
+}
+
+.customer-profile-side > .card {
+  background: linear-gradient(180deg, #1c1711 0%, #2b2117 100%) !important;
+}
+
+
+/* Logout — visible button treatment */
+.customer-profile-side form button,
+.customer-profile-side .logout-btn,
+.customer-profile-side a[href*="logout"] {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 120px;
+  margin-top: 18px;
+  padding: 10px 18px !important;
+  border: 1px solid #e4c766 !important;
+  border-radius: 10px !important;
+  background: rgba(228, 199, 102, 0.12) !important;
+  color: #f4dc86 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: .2s ease;
+}
+
+.customer-profile-side form button:hover,
+.customer-profile-side .logout-btn:hover,
+.customer-profile-side a[href*="logout"]:hover {
+  background: linear-gradient(135deg, #e1c15c, #a97b13) !important;
+  color: #17140f !important;
+  border-color: transparent !important;
+  transform: translateY(-1px);
+}
+
+
+/* FINAL v3 — stable desktop scrolling */
+@media (min-width: 992px) {
+  .profile.section > .row {
+    align-items: stretch !important;
+  }
+
+  .customer-profile-side {
+    position: static !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: calc(100vh - 68px);
+    align-self: stretch;
+  }
+
+  .customer-profile-side > .card {
+    height: 100% !important;
+    min-height: calc(100vh - 68px);
+    overflow: visible !important;
+  }
+
+  .customer-profile-main > .card > .card-body {
+    min-height: calc(100vh - 68px);
+    height: auto !important;
+  }
+}
+
+
+
+
+/* COMPLETE FIX: stable responsive customer portal */
+@media (max-width: 991px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .profile.section,
+  .profile.section > .row,
+  .customer-profile-side,
+  .customer-profile-main,
+  .customer-profile-main > .card,
+  .customer-profile-main > .card > .card-body,
+  .customer-profile-main .tab-content,
+  .customer-profile-main .tab-pane {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .profile.section {
+    padding: 14px !important;
+  }
+
+  .profile.section > .row {
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  .customer-profile-side {
+    position: static !important;
+    top: auto !important;
+    margin-bottom: 14px !important;
+  }
+
+  .customer-profile-side > .card {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    border-radius: 18px !important;
+  }
+
+  .customer-profile-main > .card {
+    border-radius: 18px !important;
+    overflow: hidden;
+  }
+
+  .customer-profile-main > .card > .card-body {
+    display: block !important;
+  }
+
+  .customer-account-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 10px !important;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .customer-account-nav::-webkit-scrollbar { display: none; }
+  .customer-account-nav .nav-item { width: auto !important; flex: 0 0 auto; }
+  .customer-account-nav .nav-link { white-space: nowrap; }
+
+  .customer-profile-main .tab-content {
+    padding: 20px !important;
+    overflow-x: hidden !important;
+    overflow-anchor: none;
+  }
+
+  .customer-profile-main .tab-content > .tab-pane {
+    min-width: 0 !important;
+  }
+
+  /* Report form: eliminate Bootstrap grid width fighting on phones */
+  #report,
+  #report form,
+  #report .row,
+  #report .row > [class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  #report .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #report .row > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #report .col-form-label {
+    display: block;
+    padding: 0 0 7px !important;
+  }
+
+  #report .form-control,
+  #report .form-select,
+  #report select,
+  #report textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* No tab opacity animation on mobile: avoids height/reflow jitter */
+  .customer-profile-main .tab-content > .tab-pane,
+  .customer-profile-main .tab-content > .fade {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .customer-profile-main .tab-content > .tab-pane:not(.active) {
+    display: none !important;
+  }
+
+  .customer-profile-main .tab-content > .tab-pane.active {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile.section { padding: 10px !important; }
+  .customer-profile-main .tab-content { padding: 15px !important; }
+  .compose-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Keep desktop portal stable */
+@media (min-width: 992px) {
+  html { overflow-y: scroll; }
+  .customer-profile-side {
+    position: static !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: calc(100vh - 68px);
+  }
+  .customer-profile-side > .card {
+    height: 100% !important;
+    min-height: calc(100vh - 68px);
+    overflow: visible !important;
+  }
+}
